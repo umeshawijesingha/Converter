@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="725.0" style="-fx-border-width: 10; -fx-border-color: white; -fx-background-color: grey;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox layoutX="203.0" layoutY="9.0" prefHeight="93.0" prefWidth="318.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="242.0" text="Converter" textFill="#fcf9f9">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="80.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="39.0" layoutY="102.0" prefHeight="412.0" prefWidth="190.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2;">
+         <children>
+            <Button fx:id="btn_meter" alignment="CENTER" mnemonicParsing="false" onAction="#convertMeter" prefHeight="47.0" prefWidth="186.0" style="-fx-border-radius: 8;" text="meter">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@meter.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="-60.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btn_kilometer" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#convertKilometer" prefHeight="47.0" prefWidth="179.0" style="-fx-border-radius: 8;" text="kilometer">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@km.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="-60.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btn_volume" alignment="CENTER" layoutX="10.0" layoutY="57.0" mnemonicParsing="false" onAction="#convertVolume" prefHeight="47.0" prefWidth="195.0" style="-fx-border-radius: 8;" text="volume">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@volume.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="-60.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btn_INR" alignment="CENTER" layoutX="10.0" layoutY="104.0" mnemonicParsing="false" onAction="#convertINR" prefHeight="47.0" prefWidth="193.0" style="-fx-border-radius: 8;" text="  INR">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@currency.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="-60.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btn_celcius" alignment="CENTER" layoutX="10.0" layoutY="152.0" mnemonicParsing="false" onAction="#convertCelcius" prefHeight="47.0" prefWidth="193.0" style="-fx-border-radius: 8;" text="Celcius">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@celcius.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="-60.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btn_fahrenheit" alignment="CENTER" layoutX="20.0" layoutY="292.0" mnemonicParsing="false" onAction="#convertFahrenheit" prefHeight="47.0" prefWidth="193.0" style="-fx-border-radius: 8;" text=" Fahrenheit">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fahrenheit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="-60.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <TextField fx:id="txtInput" alignment="CENTER_RIGHT" layoutX="253.0" layoutY="102.0" prefHeight="47.0" prefWidth="365.0" style="-fx-border-radius: 5; -fx-border-color: green;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <SplitMenuButton fx:id="btn_condition" layoutX="627.0" layoutY="111.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="74.0" style="-fx-border-color: green; -fx-border-width: 2; -fx-border-radius: 5;">
+        <items>
+            <MenuItem fx:id="btn_mm" mnemonicParsing="false" onAction="#input_mm" text="mm" />
+            <MenuItem fx:id="btn_cm" mnemonicParsing="false" onAction="#input_cm" text="cm" />
+          <MenuItem fx:id="btn_m" mnemonicParsing="false" onAction="#input_m" text="m" />
+            <MenuItem fx:id="btn_km" mnemonicParsing="false" onAction="#input_km" text="km" />
+        </items>
+      </SplitMenuButton>
+      <AnchorPane layoutX="253.0" layoutY="224.0" prefHeight="168.0" prefWidth="446.0" style="-fx-background-color: grey;">
+         <children>
+            <VBox layoutX="14.0" layoutY="8.0" prefHeight="121.0" prefWidth="190.0" style="-fx-background-color: grey; -fx-border-width: 4; -fx-border-color: white;">
+               <children>
+                  <Label fx:id="lblInput" alignment="CENTER" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: white; -fx-border-color: green;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="lblInputUnit" alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: white; -fx-border-color: green;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="249.0" layoutY="7.0" prefHeight="122.0" prefWidth="190.0" style="-fx-background-color: grey; -fx-border-color: white; -fx-border-width: 4;">
+               <children>
+                  <Label fx:id="lblOutput" alignment="CENTER" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: white; -fx-border-color: green;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="lblOutputUnit" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: white; -fx-border-color: green;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" layoutX="209.0" layoutY="40.0" prefHeight="51.0" prefWidth="28.0" text="=">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_clear" layoutX="319.0" layoutY="427.0" mnemonicParsing="false" onAction="#clear" prefHeight="42.0" prefWidth="276.0" style="-fx-border-color: green; -fx-border-radius: 5;" text="Clear">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
